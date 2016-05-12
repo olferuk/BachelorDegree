@@ -1,0 +1,57 @@
+\documentclass[14pt, a4paper]{extarticle}
+\usepackage[left=2cm,right=2cm,bottom=3cm,top=2cm]{geometry}
+
+\usepackage[utf8]{inputenc}
+\usepackage[russian]{babel}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{url}
+\usepackage{multirow}
+\usepackage{mathtools}
+\usepackage{amsmath}
+\usepackage{indentfirst}
+\usepackage{multirow}
+\usepackage{rotating} 
+\usepackage{tabu}
+\usepackage{cases}
+
+\DeclarePairedDelimiter{\abs}{\lvert}{\rvert}
+
+\linespread{1.25}
+
+\begin{document}
+
+\input{tex/introduction}    \clearpage \newpage
+\input{tex/01_Targets}    \clearpage \newpage
+\input{tex/02_Glossary}   \clearpage \newpage
+\input{tex/03_Analysis}   \clearpage \newpage
+    \input{tex/0301_SuccessfulIncludes}  
+    \input{tex/0302_ExistingPlatforms}   
+    \input{tex/0303_BeaconTypes}        
+    \input{tex/0304_Structure}
+    \input{tex/0305_DataFormat}
+    \input{tex/0306_AlternativeTechnologies}
+    \input{tex/0307_Security}
+    \input{tex/0308_Language}
+    \input{tex/0309_API}
+    \input{tex/0310_Kalman}
+    \input{tex/0311_OptimumPlacement}
+    \input{tex/0312_OptimumPick}
+    \input{tex/0313_AlternativeWays}    \clearpage \newpage
+\input{tex/04_Implementation} 
+    \input{tex/0401_MainClasses}
+    \input{tex/0402_PowerCenterImplementation}
+    \input{tex/0403_SphereIntersection}    
+    \input{tex/0404_AGA}
+    
+\clearpage \newpage
+   
+\renewcommand{\bibname}{Список литературы}
+\addcontentsline{toc}{section}{\bibname}
+
+\bibliographystyle{gost71s}
+\bibliography{references}{}
+
+\end{document}
