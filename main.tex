@@ -16,12 +16,18 @@
 \usepackage{rotating} 
 \usepackage{tabu}
 \usepackage{cases}
+\usepackage{listings} % Listings
+%\usepackage{courier} % Courier New in listings
 
 \DeclarePairedDelimiter{\abs}{\lvert}{\rvert}
 
 \linespread{1.25}
 
+\newcommand{\quotes}[1]{``#1''}
+
 \begin{document}
+
+\tableofcontents \clearpage \newpage
 
 \input{tex/introduction}    \clearpage \newpage
 \input{tex/01_Targets}    \clearpage \newpage
@@ -38,20 +44,29 @@
     \input{tex/0309_API}
     \input{tex/0310_Kalman}
     \input{tex/0311_OptimumPlacement}
-    \input{tex/0312_OptimumPick}
-    \input{tex/0313_AlternativeWays}    \clearpage \newpage
+    \input{tex/0312_OptimumPick}    \clearpage \newpage
 \input{tex/04_Implementation} 
-    \input{tex/0401_MainClasses}
+    \input{tex/0401_Fingerprints}
+    \input{tex/0402_MonteCarlo}
     \input{tex/0402_PowerCenterImplementation}
     \input{tex/0403_SphereIntersection}    
     \input{tex/0404_AGA}
-    
+    \input{tex/0401_MainClasses}    
+    \input{tex/0405_Uml}    \clearpage \newpage
+\input{tex/Conclusion}  
+
 \clearpage \newpage
-   
+     
 \renewcommand{\bibname}{Список литературы}
 \addcontentsline{toc}{section}{\bibname}
 
+\clearpage \newpage
+
 \bibliographystyle{gost71s}
 \bibliography{references}{}
+
+\clearpage \newpage
+
+\input{tex/Addendum}
 
 \end{document}
