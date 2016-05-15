@@ -1,0 +1,49 @@
+This is BibTeX, Version 0.99d (TeX Live 2015)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: main.aux
+The style file: gost71s.bst
+Database file #1: references.bib
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Warning--empty journal in kalmanKinect
+You've used 37 entries,
+            3051 wiz_defined-function locations,
+            883 strings with 13304 characters,
+and the built_in function-call counts, 8067 in all, are:
+= -- 964
+> -- 174
+< -- 20
++ -- 72
+- -- 35
+* -- 421
+:= -- 807
+add.period$ -- 149
+call.type$ -- 37
+change.case$ -- 36
+chr.to.int$ -- 0
+cite$ -- 38
+duplicate$ -- 382
+empty$ -- 842
+format.name$ -- 35
+if$ -- 2012
+int.to.chr$ -- 0
+int.to.str$ -- 37
+missing$ -- 0
+newline$ -- 259
+num.names$ -- 36
+pop$ -- 178
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 101
+skip$ -- 206
+stack$ -- 0
+substring$ -- 219
+swap$ -- 283
+text.length$ -- 9
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 1
+while$ -- 35
+width$ -- 39
+write$ -- 639
+(There was 1 warning)
