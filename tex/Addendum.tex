@@ -302,3 +302,42 @@ double * calculateUserPositionEpta(double *xs, double *ys, double *accs) {
     return result;
 }
 \end{lstlisting}
+
+
+\subsection*{Приложение 4. Начальная настройка подключенной библиотеки}
+
+\lstset{language=[Objective]C}
+
+\begin{lstlisting}
+#import <BeaconLocation/BeaconLocation.h>
+@import CoreGraphics;
+// ...
+@property (nonatomic, strong) BeaconLocation *library;
+// ...
+@interface MyClass: NSObject <BeaconLocationDelegate>
+// ...
+- (void)init {
+  self = [super init];
+  if (self) {
+    //init
+    _library = [[BeaconLocation alloc] initWithUUIDString:@"12345678-1234-0000-4321-876543210000" 
+                                               identifier:@"My region"];
+
+    //beacons
+    [_library.floor addBeaconWithMajor:0 minor:0 inPosition:CGPointMake(1, 2)];
+    [_library.floor addBeaconWithMajor:0 minor:1 inPosition:CGPointMake(2, 3)];
+    [_library.floor addBeaconWithMajor:0 minor:2 inPosition:CGPointMake(1, 3)];
+
+    //method
+    [_library.processor setAlgorithm:AlgorithmTypeSphereIntersection];
+
+    //delegate
+    _library.delegate = self;
+  }
+  return self;
+}
+
+- (void)onUpdateUserPostion:(CGPoint)position {
+  // do fancy stuff
+}
+\end{lstlisting}
